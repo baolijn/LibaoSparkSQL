@@ -20,7 +20,7 @@ object HiveContextApp {
     val hiveContext = new HiveContext(sc)
 
     //2)相关的处理:
-    hiveContext.table("emp").show
+    hiveContext.table("hive_wordcount").show
 
     //3)关闭资源
     sc.stop()

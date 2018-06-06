@@ -9,8 +9,7 @@ object ParquetApp {
 
   def main(args: Array[String]) {
 
-    val spark = SparkSession.builder().appName("SparkSessionApp")
-      .master("local[2]").getOrCreate()
+    val spark = SparkSession.builder().appName("SparkSessionApp").master("local[2]").getOrCreate()
 
 
     /**
